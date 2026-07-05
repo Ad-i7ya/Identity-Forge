@@ -12,7 +12,7 @@ Python:
 
 from .core import generate_identity, get_countries
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Ad-i7ya"
 
 __all__ = [
