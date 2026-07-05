@@ -6,11 +6,11 @@
 
 <p align="center">
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/Ad-i7ya/IdentityForge?style=for-the-badge">
+    <img src="https://img.shields.io/github/license/Ad-i7ya/Identity-Forge?style=for-the-badge">
   </a>
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
-  <img src="https://img.shields.io/github/last-commit/Ad-i7ya/IdentityForge?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/Ad-i7ya/IdentityForge?style=for-the-badge">
+  <img src="https://img.shields.io/github/last-commit/Ad-i7ya/Identity-Forge?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/Ad-i7ya/Identity-Forge?style=for-the-badge">
 </p>
 
 <p align="center">
