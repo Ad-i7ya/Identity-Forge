@@ -1,5 +1,10 @@
-# CLI Guide
+# IdentityForge CLI Guide
 
-identityforge --help
-identityforge countries
-identityforge generate us
+IdentityForge is a CLI tool to generate synthetic identity data.
+
+---
+
+## 📦 Installation
+
+```bash
+pip install identityforge
