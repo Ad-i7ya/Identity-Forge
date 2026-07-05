@@ -34,13 +34,7 @@ def countries():
     countries_list = data.get("data", {}).get("countries", [])
 
     for c in countries_list:
-        # DEBUG SAFE HANDLING
-        if isinstance(c, dict):
-            name = c.get("name") or c.get("country") or str(c)
-        else:
-            name = str(c)
-
-        print(Fore.YELLOW + "- " + name)
+        print(Fore.YELLOW + "- " + str(c))
 
 
 def generate_cmd(country):
