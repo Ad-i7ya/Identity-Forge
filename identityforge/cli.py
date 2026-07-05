@@ -23,7 +23,6 @@ Examples:
 
 
 def countries():
-    print("DEBUG: countries function running from UPDATED FILE")
     data = get_countries()
 
     if not data.get("success"):
