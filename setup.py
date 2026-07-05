@@ -5,7 +5,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
-    name="identityforge",
+    name="identityforge-cli",
     version="1.0.0",
     author="Ad-i7ya",
     description="Developer-friendly toolkit for generating synthetic identities via CLI, Python, and REST API.",
