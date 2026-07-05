@@ -43,18 +43,141 @@
 
 ## 📖 Overview
 
-IdentityForge is a developer-friendly REST API and upcoming CLI that generates realistic **synthetic identities** for testing, mock data generation, privacy-focused workflows, demonstrations, automation, and OPSEC training.
+IdentityForge is an open-source toolkit for generating realistic **synthetic identities** for development, testing, automation, cybersecurity labs, privacy-focused workflows, demonstrations, and OPSEC training.
 
-Designed with simplicity in mind, IdentityForge provides consistent JSON responses, broad country support, and an easy-to-integrate API suitable for developers, cybersecurity enthusiasts, QA engineers, and researchers.
+Unlike traditional identity generators, IdentityForge provides **three different ways** to access the same service, allowing developers to integrate it into any workflow:
+
+- 💻 Command Line Interface (CLI)
+- 🐍 Python Module
+- 🌐 REST API
+
+Whether you're writing automation scripts, testing applications, building demos, or experimenting with APIs, IdentityForge offers a simple and consistent developer experience.
+
 ---
-## ✨ Features
 
-- 🌍 Generate synthetic identities for multiple countries
+# ✨ Features
+
+- 🌍 Generate realistic synthetic identities for multiple countries
 - ⚡ Fast REST API
-- 💻 CLI support (coming soon)
-- 📚 Developer-friendly documentation (coming soon)
+- 💻 Cross-platform Command Line Interface (CLI)
+- 🐍 Python package support
+- 📦 Easy installation
+- ☁️ Powered by Cloudflare Workers
+- 📚 Comprehensive documentation
+- 🔒 Uses synthetic data only
 
-- ## 🚀 Quick Start
+---
+
+# 🚀 Installation
+
+IdentityForge can be used in multiple ways depending on your workflow.
+
+## Option 1 — Install from GitHub (Recommended)
+
+Clone the repository and install IdentityForge locally.
+
+```bash
+git clone https://github.com/Ad-i7ya/Identity-Forge.git
+cd Identity-Forge
+pip install -r requirements.txt
+pip install -e .
+```
+
+After installation, verify that the CLI is available:
+
+```bash
+identityforge --help
+```
+
+List all supported countries:
+
+```bash
+identityforge countries
+```
+
+Generate a synthetic identity:
+
+```bash
+identityforge generate us
+```
+---
+
+## Option 2 — Install from PyPI
+
+> **Coming Soon**
+
+After the first public release:
+
+```bash
+pip install identityforge
+```
+
+Verify the installation:
+
+```bash
+identityforge --help
+```
+
+List all supported countries:
+
+```bash
+identityforge countries
+```
+
+Generate a synthetic identity:
+
+```bash
+identityforge generate us
+```
+---
+
+# 🐍 Option 3 — Python Module
+
+IdentityForge can also be used directly inside your Python applications.
+
+Import the package:
+
+```python
+from identityforge import get_countries, generate_identity
+```
+
+List all supported countries:
+
+```python
+from identityforge import get_countries
+
+countries = get_countries()
+print(countries)
+```
+
+Generate a synthetic identity:
+
+```python
+from identityforge import generate_identity
+
+identity = generate_identity("us")
+print(identity)
+```
+
+> **Note**
+>
+> Before PyPI release, install the package locally using:
+>
+> ```bash
+> pip install -e .
+> ```
+>
+> After publishing to PyPI, simply run:
+>
+> ```bash
+> pip install identityforge
+> ```
+
+---
+
+# 🌐 Option 4 — REST API
+
+Use IdentityForge directly through HTTP requests.
 
 ### Base URL
 
@@ -65,19 +188,20 @@ https://identity-forge.adi7ya.workers.dev
 ### Available Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
+|---------|----------|-------------|
 | GET | `/` | API information |
-| GET | `/countries` | List all supported countries |
+| GET | `/countries` | List supported countries |
 | GET | `/generate?country=<code>` | Generate a synthetic identity |
 
-### Example
+### Example Request
 
 ```http
 GET /generate?country=us
 ```
+
 ---
 
-### Example Response
+## 🧬 Example Response
 
 ```json
 {
@@ -108,3 +232,35 @@ GET /generate?country=us
   }
 }
 ```
+
+---
+
+# 📚 Documentation
+
+Additional documentation is available in the repository.
+
+- 📖 **CLI Guide:** `docs/cli.md`
+- 🌐 **API Documentation:** `docs/api.md`
+- 💡 **cURL Examples:** `examples/curl.md`
+
+---
+
+# 🤝 Feedback
+
+If you find IdentityForge useful:
+
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 🐞 Report bugs by opening an Issue
+- 💡 Suggest new features or improvements
+
+Contributions and constructive feedback are always welcome.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
