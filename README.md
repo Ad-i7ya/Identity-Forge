@@ -104,12 +104,9 @@ identityforge generate us
 
 ## Option 2 — Install from PyPI
 
-> **Coming Soon**
-
-After the first public release:
 
 ```bash
-pip install identityforge
+pip install identityforge-cli
 ```
 
 Verify the installation:
@@ -159,19 +156,7 @@ identity = generate_identity("us")
 print(identity)
 ```
 
-> **Note**
->
-> Before PyPI release, install the package locally using:
->
-> ```bash
-> pip install -e .
-> ```
->
-> After publishing to PyPI, simply run:
->
-> ```bash
-> pip install identityforge
-> ```
+
 
 ---
 
