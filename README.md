@@ -29,8 +29,7 @@
   Built for testing, mock data, privacy-focused workflows, and OPSEC training.
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Developer-friendly+REST+API;Synthetic+Identity+Generation;Testing+%7C+Mock+Data+%7C+OPSEC+Training;Cloudflare+Workers+Powered;CLI+Coming+Soon" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Developer-friendly+REST+API;Synthetic+Identity+Generation;Python+Module+%7C+CLI+%7C+REST+API;Testing+%7C+Mock+Data+%7C+OPSEC+Training;Cloudflare+Workers+Powered" alt="Typing SVG" />
 </p>
 
 <p align="center">
