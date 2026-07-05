@@ -29,18 +29,14 @@ def countries():
         print(Fore.RED + "[ERROR] Failed to fetch countries")
         return
 
-    print(Fore.GREEN + "\n[+] Available Countries:\n")
+    print(Fore.GREEN + "\n[+] Available Countries\n" + Style.RESET_ALL)
 
     countries_list = data.get("data", {}).get("countries", [])
 
     for c in countries_list:
-        # SAFE PARSE (handles string or dict)
-        if isinstance(c, dict):
-            name = c.get("name") or c.get("country") or str(c)
-        else:
-            name = str(c)
+        print(Fore.YELLOW + " • " + str(c))
 
-        print(Fore.YELLOW + "- " + name)
+
 def generate_cmd(country):
     if not country:
         print(Fore.RED + """
@@ -62,17 +58,20 @@ Example:
 
     user = data["data"][0]
 
-    print(Fore.GREEN + "\n[+] Identity Generated\n")
+    print(Fore.GREEN + "\n[+] Identity Generated\n" + Style.RESET_ALL)
+    print(Fore.CYAN + "====================================")
 
-    print(Fore.CYAN + f"[+] Full Name   : {user.get('Full Name')}")
-    print(f"[+] Gender      : {user.get('Gender')}")
-    print(f"[+] Email       : {user.get('Email')}")
-    print(f"[+] Phone       : {user.get('Phone Number')}")
-    print(f"[+] Country     : {user.get('Country')}")
-    print(f"[+] Country Code: {user.get('Country_Code')}")
-    print(f"[+] City        : {user.get('City/Town')}")
-    print(f"[+] Currency    : {user.get('Currency')}")
-    print(f"[+] Time Zone   : {user.get('Time Zone')}")
+    print(f"[+] Full Name    : {user.get('Full Name')}")
+    print(f"[+] Gender       : {user.get('Gender')}")
+    print(f"[+] Email        : {user.get('Email')}")
+    print(f"[+] Phone        : {user.get('Phone Number')}")
+    print(f"[+] Country      : {user.get('Country')}")
+    print(f"[+] Country Code : {user.get('Country_Code')}")
+    print(f"[+] City         : {user.get('City/Town')}")
+    print(f"[+] Currency     : {user.get('Currency')}")
+    print(f"[+] Time Zone    : {user.get('Time Zone')}")
+
+    print(Fore.CYAN + "====================================\n")
 
 
 def main():
