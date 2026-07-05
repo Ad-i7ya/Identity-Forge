@@ -31,8 +31,10 @@ def countries():
 
     print(Fore.GREEN + "\n[+] Available Countries:\n")
 
-    for c in data["data"]["countries"]:
-        # FIX: handle string OR dict safely
+    countries_list = data.get("data", {}).get("countries", [])
+
+    for c in countries_list:
+        # DEBUG SAFE HANDLING
         if isinstance(c, dict):
             name = c.get("name") or c.get("country") or str(c)
         else:
