@@ -248,3 +248,5 @@ This project is licensed under the **MIT License**.
 
 See the [LICENSE](https://github.com/Ad-i7ya/Identity-Forge?tab=License-1-ov-file) file for more information.
 
+---
+> **Note:** IdentityForge generates synthetic identities for testing, development, demonstrations, and training. It is not intended to create or impersonate real individuals.
