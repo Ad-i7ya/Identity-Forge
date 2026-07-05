@@ -262,5 +262,5 @@ Contributions and constructive feedback are always welcome.
 
 This project is licensed under the **MIT License**.
 
-See the `LICENSE` file for more information.
+See the [LICENSE](https://github.com/Ad-i7ya/Identity-Forge?tab=License-1-ov-file) file for more information.
 
