@@ -7,19 +7,26 @@ init(autoreset=True)
 
 def show_help():
     print(Fore.CYAN + """
-====================================
-        IdentityForge CLI
-====================================
+=========================================
+          IdentityForge CLI
+=========================================
+
+Developer : github.com/Ad-i7ya
+Version   : v1.0.1
 
 Commands:
   identityforge countries
-  identityforge generate <code>
+  identityforge generate <country>
 
 Examples:
   identityforge countries
   identityforge generate us
-====================================
-""")
+
+Repository:
+  https://github.com/Ad-i7ya/Identity-Forge
+
+=========================================
+""" + Style.RESET_ALL)
 
 
 def countries():
