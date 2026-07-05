@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="identityforge-cli",
-    version="1.0.0",
+    version="1.0.1",
     author="Ad-i7ya",
     description="Developer-friendly toolkit for generating synthetic identities via CLI, Python, and REST API.",
     long_description=long_description,
