@@ -19,7 +19,7 @@ Examples:
   identityforge countries
   identityforge generate us
 ====================================
-""" + Style.RESET_ALL)
+""")
 
 
 def countries():
@@ -32,7 +32,13 @@ def countries():
     print(Fore.GREEN + "\n[+] Available Countries:\n")
 
     for c in data["data"]["countries"]:
-        print(Fore.YELLOW + "- " + c)
+        # FIX: handle string OR dict safely
+        if isinstance(c, dict):
+            name = c.get("name") or c.get("country") or str(c)
+        else:
+            name = str(c)
+
+        print(Fore.YELLOW + "- " + name)
 
 
 def generate_cmd(country):
@@ -63,10 +69,10 @@ Example:
     print(f"[+] Email       : {user.get('Email')}")
     print(f"[+] Phone       : {user.get('Phone Number')}")
     print(f"[+] Country     : {user.get('Country')}")
-    print(f"[+] Country Code: {user.get('Country Code')}")
+    print(f"[+] Country Code: {user.get('Country_Code')}")
     print(f"[+] City        : {user.get('City/Town')}")
     print(f"[+] Currency    : {user.get('Currency')}")
-    print(f"[+] Time Zone   : {user.get('Time Zone')}" + Style.RESET_ALL)
+    print(f"[+] Time Zone   : {user.get('Time Zone')}")
 
 
 def main():
