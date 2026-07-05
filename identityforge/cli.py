@@ -26,16 +26,13 @@ def countries():
     data = get_countries()
 
     if not data.get("success"):
-        print(Fore.RED + "[ERROR] Failed to fetch countries")
+        print("[ERROR] Failed to fetch countries")
         return
 
-    print(Fore.GREEN + "\n[+] Available Countries:\n")
+    print("\n[+] Available Countries:\n")
 
-    countries_list = data.get("data", {}).get("countries", [])
-
-    for c in countries_list:
-        print(Fore.YELLOW + "- " + str(c))
-
+    for c in data.get("data", {}).get("countries", []):
+        print("- " + str(c))
 
 def generate_cmd(country):
     if not country:
